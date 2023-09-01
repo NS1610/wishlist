@@ -2,16 +2,16 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="requester" table="x_snc_wishlist_wish_item">
         <active>true</active>
         <array>false</array>
-        <attributes>encode_utf8=false</attributes>
+        <attributes>edge_encryption_enabled=true,encode_utf8=false</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Requester</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>javascript:gs.getUserID();</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -19,7 +19,7 @@
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value/>
+        <dynamic_default_value display_value="Sender">2fd8e97bef3221002841f7f775c0fbc1</dynamic_default_value>
         <dynamic_ref_qual/>
         <element>requester</element>
         <element_reference>false</element_reference>
@@ -56,7 +56,7 @@
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
+        <use_dynamic_default>true</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <virtual_type>script</virtual_type>
